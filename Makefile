@@ -10,7 +10,7 @@ build: deps
 deps: # @HELP ensure that the required dependencies are in place
 	go build -v ./...
 	bash -c "diff -u <(echo -n) <(git diff go.mod)"
-	bash -c "diff -u <(echo -n) <(git diff go.sum)"
+	#bash -c "diff -u <(echo -n) <(git diff go.sum)"
 
 all: build
 

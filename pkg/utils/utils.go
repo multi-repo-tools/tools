@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-// RunCommand run a linux command
+// runCommand run a linux command
 func RunCommand(name string, args ...string) {
 	cmd := exec.Command(name, args...)
 	cmd.Stdout = os.Stdout
