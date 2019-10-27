@@ -19,3 +19,9 @@ cache:
   directories:
     - $HOME/gopath/pkg/mod         # Cache the Go modules
 
+jobs:
+  include:
+    - stage: build
+      script:
+        - make build
+
